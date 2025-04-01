@@ -8,11 +8,6 @@ namespace TextRPG.Scenes
 {
     public class TitleScene : Scene
     {
-        public override void Next()
-        {
-            // TODO : 다음 씬으로 전환 구현 필요
-        }
-
         public override void Render()
         {
             Console.WriteLine("**********************************");
@@ -31,5 +26,15 @@ namespace TextRPG.Scenes
         }
 
         public override void Wait() { }
+
+        public override void Next()
+        {
+            switch (input)
+            {
+                case ConsoleKey.D1:
+                    Game.ChangeScene("Town");
+                    break;
+            }
+        }
     }
 }
