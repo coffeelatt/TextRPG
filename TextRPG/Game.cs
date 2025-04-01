@@ -55,5 +55,17 @@ namespace TextRPG
         {
             curScene = sceneDic[sceneName];
         }
+
+        public static void GameOver(string reason)
+        {
+            Console.Clear();
+            Console.WriteLine("**********************************");
+            Console.WriteLine("*          You Died...           *");
+            Console.WriteLine("**********************************");
+            Console.WriteLine();
+            Console.WriteLine(reason);
+
+            gameOver = true;
+        }
     }
 }
