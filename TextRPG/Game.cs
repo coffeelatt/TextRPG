@@ -15,6 +15,8 @@ namespace TextRPG
         private static Dictionary<string, Scene> sceneDic;
         private static Scene curScene;
 
+        private static Player player;
+        public static Player Player { get { return player; } }
 
         // 게임에 필요한 기능들
         public static void Start()

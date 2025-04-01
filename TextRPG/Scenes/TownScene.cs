@@ -10,9 +10,9 @@ namespace TextRPG.Scenes
     {
         public override void Render()
         {
-            Console.WriteLine("사람들이 북적거리는 마을이다...");
-            Console.WriteLine("여러 상인들이 물건을 팔고 있다...");
-            Console.WriteLine("멀리서는 수상해 보이는 남성이 눈치를 보고 있다...");
+            Util.Print("사람들이 북적거리는 마을이다...", ConsoleColor.White, 1000);
+            Util.Print("여러 상인들이 물건을 팔고 있다...", ConsoleColor.White, 1000);
+            Util.Print("멀리서는 수상해 보이는 남성이 눈치를 보고 있다...", ConsoleColor.Red, 1000);
         }
 
         public override void Choice()
