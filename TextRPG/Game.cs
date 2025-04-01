@@ -36,6 +36,8 @@ namespace TextRPG
         {
             while (gameOver == false)
             {
+                Console.Clear();
+
                 curScene.Render();
                 curScene.Choice();
                 curScene.Input();
