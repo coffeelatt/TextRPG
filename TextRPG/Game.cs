@@ -23,6 +23,7 @@ namespace TextRPG
             sceneDic = new Dictionary<string, Scene>();
             sceneDic.Add("Title", new TitleScene());
             sceneDic.Add("Town", new TownScene());
+            sceneDic.Add("Shop", new ShopScene());
 
             // 처음시작할 씬을 선정
             curScene = sceneDic["Title"];
@@ -38,11 +39,13 @@ namespace TextRPG
             while (gameOver == false)
             {
                 Console.Clear();
-
                 curScene.Render();
+                Console.WriteLine();
                 curScene.Choice();
                 curScene.Input();
+                Console.WriteLine();
                 curScene.Result();
+                Console.WriteLine();
                 curScene.Wait();
                 curScene.Next();
             }

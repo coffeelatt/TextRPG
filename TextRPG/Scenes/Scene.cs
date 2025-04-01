@@ -20,8 +20,6 @@ namespace TextRPG.Scenes
 
         public abstract void Result();
         public abstract void Wait();
-        public abstract void Next();
-
-       
+        public abstract void Next();       
     }
 }

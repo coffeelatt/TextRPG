@@ -13,7 +13,6 @@ namespace TextRPG.Scenes
             Console.WriteLine("사람들이 북적거리는 마을이다...");
             Console.WriteLine("여러 상인들이 물건을 팔고 있다...");
             Console.WriteLine("멀리서는 수상해 보이는 남성이 눈치를 보고 있다...");
-            Console.WriteLine();
         }
 
         public override void Choice()
@@ -55,7 +54,9 @@ namespace TextRPG.Scenes
         {
             switch (input)
             {
-                
+                case ConsoleKey.D1:
+                    Game.ChangeScene("Shop");
+                    break;
             }
         }
     }
