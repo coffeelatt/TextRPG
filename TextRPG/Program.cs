@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            // 새로운 게임 제작의 첫 발자국... 두근두근
+            Game.Start();
+            Game.Run();
+            Game.End();
         }
     }
 }
