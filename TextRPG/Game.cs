@@ -29,6 +29,10 @@ namespace TextRPG
 
             // 처음시작할 씬을 선정
             curScene = sceneDic["Title"];
+
+            player = new Player();
+            player.Power = 10;
+            player.Speed = 8;
         }
 
         public static void End()
@@ -68,6 +72,15 @@ namespace TextRPG
             Console.WriteLine(reason);
 
             gameOver = true;
+        }
+
+        public static void PrintInfo()
+        {
+            Console.WriteLine("**********************************");
+            Console.WriteLine(" 플레이어");
+            Console.WriteLine(" 힘 : {0}\t 속도 : {1}", player.Power, player.Speed);
+            Console.WriteLine("**********************************");
+            Console.WriteLine();
         }
     }
 }
